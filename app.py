@@ -10,10 +10,11 @@ import fitz  # PyMuPDF
 import io
 import numpy as np
 import hashlib
+import os
 
 # Clinical BERT will be loaded lazily
-clinical_bert_model = None
-clinical_bert_tokenizer = None
+clinical_bert_model = "medicalai/ClinicalBERT"
+HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Load environment variables (optional - API key is now hardcoded)
 try:
@@ -102,7 +103,6 @@ def get_groq_client():
     if groq_client is None:
         groq_client = Groq(api_key=GROQ_API_KEY)
     return groq_client
-
 # OCR reader - will try multiple OCR methods
 ocr_reader = None
 ocr_method = None

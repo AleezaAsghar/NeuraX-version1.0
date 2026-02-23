@@ -1,11 +1,14 @@
-# Python
-__pycache__/
+#Python
+
+**pycache**/
 *.py[cod]
 *$py.class
 *.so
 .Python
+
+# Distribution / packaging
+
 build/
-develop-eggs/
 dist/
 downloads/
 eggs/
@@ -20,40 +23,42 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
 venv/
 env/
 ENV/
-.venv
+.venv/
 
 # Flask
+
 instance/
 .webassets-cache
 
-# Database
+#Database
 db.sqlite3
 *.db
+*.sqlite3
 
-# Uploads directory
+
+# User uploads 
 uploads/
 static/profiles/
-*.pdf
-*.png
-*.jpg
-*.jpeg
-
-# Environment variables
+#Environment variables
 .env
-.env.local
-
-# IDE
+.env.*
+!.env.example
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# OS files
+
 .DS_Store
 Thumbs.db
 
+#Logs
+
+*.log
+#Optional: Jupyter
+.ipynb_checkpoints/
