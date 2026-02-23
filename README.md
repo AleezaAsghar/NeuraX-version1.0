@@ -1,4 +1,4 @@
-# ObrixLabs - Advanced Hospital Management System (HMS)
+# Neura-X - Advanced Hospital Management System (HMS)
 
 A comprehensive, AI-powered Hospital Management System built with Flask that streamlines hospital operations, enhances patient care, and provides intelligent medical report analysis.
 
